@@ -1,0 +1,5 @@
+package image;
+
+public enum Images {
+    ICON,BACKGROUND,SKIN1,SKIN2,SKIN3,SKIN4,SKIN5,SKIN6,MENUBACKGROUND;
+}

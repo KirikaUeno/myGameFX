@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="720.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.GameController">
+   <children>
+      <AnchorPane fx:id="gamePanel" onKeyPressed="#inGameKeyPressed" onKeyReleased="#inGameKeyReleased" prefHeight="720.0" prefWidth="1280.0">
+         <children>
+            <ImageView fx:id="gameBackground" fitHeight="720.0" fitWidth="1280.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../images/wallpaper.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="playerImage" fitHeight="69.0" fitWidth="66.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../images/skin2.jpg" />
+               </image>
+            </ImageView>
+            <Label fx:id="label" layoutX="350.0">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Button fx:id="gameButton" mnemonicParsing="false" opacity="0.0" text="Button" />
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="inGameMenu" onKeyReleased="#inGameMenuKeyReleased" prefHeight="720.0" prefWidth="1280.0">
+         <children>
+            <ImageView fx:id="inGameMenuImage" fitHeight="720.0" fitWidth="320.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../images/inGameMenu.jpg" />
+               </image>
+            </ImageView>
+            <Button fx:id="saveButton" layoutX="117.0" layoutY="50.0" mnemonicParsing="false" onAction="#saveAction" style="-fx-background-color: Transparent;" text="SAVE" textFill="WHITE">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Button>
+            <Button fx:id="loadButton" layoutX="114.5" layoutY="150.0" mnemonicParsing="false" onAction="#loadAction" style="-fx-background-color: Transparent;" text="LOAD" textFill="WHITE">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Button>
+            <Button fx:id="toMainMenuButton" layoutX="73.0" layoutY="250.0" mnemonicParsing="false" onAction="#toMainMenuAction" style="-fx-background-color: Transparent;" text="TO MAIN MENU" textFill="WHITE">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Button>
+            <Button fx:id="toDesktopButton" layoutX="86.5" layoutY="350.0" mnemonicParsing="false" onAction="#toDesktopAction" style="-fx-background-color: Transparent;" text="TO DESKTOP" textFill="WHITE">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
