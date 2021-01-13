@@ -38,8 +38,7 @@ public class StartMenuController implements Initializable {
     }
 
     public void settingAction(ActionEvent e){
-        Stage stage = (Stage)settings.getScene().getWindow();
-        stage.close();
+
     }
 
     public void exitAction(ActionEvent e){

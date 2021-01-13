@@ -58,5 +58,43 @@
             </Button>
          </children>
       </AnchorPane>
+      <AnchorPane fx:id="savePanel" layoutX="500.0" layoutY="100.0" onKeyReleased="#savePanelKeyReleased" prefHeight="360.0" prefWidth="640.0" style="-fx-background-color: #1c2128;">
+         <children>
+            <Button fx:id="saveSaveButton" layoutX="83.0" layoutY="80.0" mnemonicParsing="false" onAction="#saveSaveAction" style="-fx-background-color: Transparent;" text="SAVE" textFill="WHITE">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Button>
+            <Button fx:id="saveBackButton" layoutX="82.0" layoutY="150.0" mnemonicParsing="false" onAction="#saveBackAction" style="-fx-background-color: Transparent;" text="BACK" textFill="WHITE">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Button>
+            <Label fx:id="saveSuccess" layoutX="42.0" layoutY="281.0" textFill="#edc2c2">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="loadPanel" layoutX="510.0" layoutY="110.0" onKeyReleased="#loadPanelKeyReleased" prefHeight="360.0" prefWidth="640.0" style="-fx-background-color: #1c2128;">
+         <children>
+            <Button fx:id="loadLoadButton" layoutX="83.0" layoutY="80.0" mnemonicParsing="false" onAction="#loadLoadAction" style="-fx-background-color: Transparent;" text="LOAD" textFill="WHITE">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Button>
+            <Button fx:id="loadBackButton" layoutX="82.0" layoutY="150.0" mnemonicParsing="false" onAction="#loadBackAction" style="-fx-background-color: Transparent;" text="BACK" textFill="WHITE">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Button>
+            <Label fx:id="loadSuccess" layoutX="42.0" layoutY="281.0" textFill="#edc2c2">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
    </children>
 </AnchorPane>

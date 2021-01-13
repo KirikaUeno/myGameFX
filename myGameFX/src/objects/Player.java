@@ -15,12 +15,16 @@ public class Player extends Sprite{
 
     @Override
     public void move() {
-        dx=pressedButtons[3]-pressedButtons[1];
-        dy=pressedButtons[2]-pressedButtons[0];
+        dx=2*(pressedButtons[3]-pressedButtons[1]);
+        dy=2*(pressedButtons[2]-pressedButtons[0]);
         if(dx!=0 || dy!=0) {
             x += dx / Math.sqrt(dx * dx + dy * dy);
             y += dy / Math.sqrt(dx * dx + dy * dy);
         }
+        if(x<0) x=0;
+        if(y<0) y=0;
+        if(x>(Constants.boardWight-Constants.GIRLWight)) x = (Constants.boardWight-Constants.GIRLWight);
+        if(y>(Constants.boardHeight-Constants.GIRLHeight)) y = (Constants.boardHeight-Constants.GIRLHeight);
     }
 
     public Skin getSkin() {
